@@ -1,0 +1,66 @@
+{
+    "artistID": {"S": "a1b2c3"},
+    "name": {"S": "The Beatles"},
+    "albums": {
+      "L": [
+        {
+          "M": {
+            "albumId": {"S": "x1y2z3"},
+            "title": {"S": "Abbey Road"},
+            "releaseDate": {"S": "1969-09-26"},
+            "tracks": {
+              "L": [
+                {
+                  "M": {
+                    "trackId": {"S": "t1"},
+                    "title": {"S": "Come Together"},
+                    "duration": {"S": "4:20"}
+                  }
+                },
+                {
+                  "M": {
+                    "trackId": {"S": "t2"},
+                    "title": {"S": "Something"},
+                    "duration": {"S": "3:03"}
+                  }
+                },
+                {
+                  "M": {
+                    "trackId": {"S": "t3"},
+                    "title": {"S": "Maxwell's Silver Hammer"},
+                    "duration": {"S": "3:27"}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "M": {
+            "albumId": {"S": "x4y5z6"},
+            "title": {"S": "Let It Be"},
+            "releaseDate": {"S": "1970-05-08"},
+            "tracks": {
+              "L": [
+                {
+                  "M": {
+                    "trackId": {"S": "t4"},
+                    "title": {"S": "Two of Us"},
+                    "duration": {"S": "3:37"}
+                  }
+                },
+                {
+                  "M": {
+                    "trackId": {"S": "t5"},
+                    "title": {"S": "Dig a Pony"},
+                    "duration": {"S": "3:55"}
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+  

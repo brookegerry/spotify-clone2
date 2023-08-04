@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spotify-clone2-deployment
+  namespace: nakatomi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spotify-clone2
+  template:
+    metadata:
+      labels:
+        app: spotify-clone2
+    spec:
+      containers:
+      - name: spotify-clone2
+        image: 661010356257.dkr.ecr.us-east-1.amazonaws.com/spotify-clone2:latest
+        ports:
+        - containerPort: 3000
